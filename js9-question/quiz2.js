@@ -5,3 +5,15 @@
 // todo4: (write a condition that cleans up the setInterval after 10 seconds to avoid crashing)
 
 //!   Answer:
+
+console.log("wait 5 sec");
+
+const wait = setTimeout(() => {
+    console.log("ready");//Iran : ready?           USA : Nooooooooo😥😥
+    const everySecond  = setInterval(() => {
+        console.log("🚀");//Iram : attack🔥🔥
+    }, 1000);
+ const cleanSet  = setTimeout(() => {
+    clearInterval(everySecond)
+ }, 10000); 
+}, 5000);

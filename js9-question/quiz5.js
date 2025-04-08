@@ -3,7 +3,13 @@
 //? some(), every(), includes(), slice()
 const array = ['0', null, '', 0];
 function isTruthy(num) {
-  // write your code here
-}
+    return num.some(Boolean)
+}console.log(isTruthy(array));
 
-// !  Answer:
+
+//  or:
+
+const array1 = ['0', null, '', 0];
+function isTruthy(num) {
+    return num.some(el=> !el)
+}console.log(isTruthy(array));

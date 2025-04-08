@@ -4,3 +4,13 @@
 
 const array = ['hello Jo', 'fish', 'birmingham', 'periodic table', 'phone'];
 //!  Answer:
+
+function findEvery(arr) {
+    return arr.filter(chr => chr.length > 6).every(chr => chr.length < 10)
+}
+console.log(findEvery(array));
+
+
+
+
+
