@@ -141,16 +141,33 @@
 // };console.log(add([1, 2, 3, 4, 5]));
 // // ------------------------------------------------------------------
 
-function evenAdd(arr) {
-  let result = [];
-  for (let i = 0, j = arr.length - 1; i <= j; i++, j--) {
-    if (i !== j) {
-      let plus = arr[j] + arr[i];
-      if (plus % 2 === 0) result.push(plus);
-    } else {
-      if (arr[i] % 2 === 0) result.push(arr[i]);
-    }
-  }
-  return result;
-}
-console.log(evenAdd([1, 2, 3, 4, 5]));
+// function evenAdd(arr) {
+//   let result = [];
+//   for (let i = 0, j = arr.length - 1; i <= j; i++, j--) {
+//     if (i !== j) {
+//       let plus = arr[j] + arr[i];
+//       if (plus % 2 === 0) result.push(plus);
+//     } else {
+//       if (arr[i] % 2 === 0) result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// }
+// console.log(evenAdd([1, 2, 3, 4, 5]));
+// // ------------------------------------------------------------------
+// // ------------------------------------------------------------------
+// // ------------------------------------------------------------------js-10------------------------------------------------------------------
+// // ------------------------------------------------------------------
+// // ------------------------------------------------------------------
+const key = "name";
+const value = "mmad";
+const person = {
+  age: {
+    "last year": 20,
+    "This year": 21,
+  },
+  city: "Tabriz",
+};
+person[key] = value
+console.log(person);
+console.log(person[key]);
