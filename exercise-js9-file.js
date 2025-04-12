@@ -110,22 +110,47 @@
 //   console.log(`${hours};${min};${seconde}`);
 // },1000);
 // ------------------------------------------------------------------
-const numbers = [10, 21, 32, 43, 54, 65, 76];
+// const numbers = [10, 21, 32, 43, 54, 65, 76];
 
+// function even(arr) {
+//     return arr.filter(num=>num % 2 ===0).reduce((num1,num2)=>  num1 + num2   ,0 )
+// }
+// console.log(even(numbers));
+// // ------------------------------------------------------------------
+// const words = ["apple", "banana", "strawberry", "kiwi", "mango"];
 
-function even(arr) {
-    return arr.filter(num=>num % 2 ===0).reduce((num1,num2)=>  num1 + num2   ,0 )
+// let length=words.reduce((chr1,chr2)=> (chr2.length > chr1.length)?chr2 :chr1 , "")
+// console.log(length);
+
+// // ------------------------------------------------------------------
+// const numberss = [1, 2, 3, 4, 5];
+
+// const reversedArray = numberss.reduce((acc, num) => [num, ...acc], []);
+
+// console.log(reversedArray);
+// // ------------------------------------------------------------------
+
+// function add(arr){
+// let result =[];
+// for(let i = 0 , j = arr.length -1 ; i <= j ; i++ , j--){
+// if(i !== j){
+//     result.push(arr[j] + arr[i])
+// }else result.push(arr[i])
+// }
+// return result;
+// };console.log(add([1, 2, 3, 4, 5]));
+// // ------------------------------------------------------------------
+
+function evenAdd(arr) {
+  let result = [];
+  for (let i = 0, j = arr.length - 1; i <= j; i++, j--) {
+    if (i !== j) {
+      let plus = arr[j] + arr[i];
+      if (plus % 2 === 0) result.push(plus);
+    } else {
+      if (arr[i] % 2 === 0) result.push(arr[i]);
+    }
+  }
+  return result;
 }
-console.log(even(numbers));
-// ------------------------------------------------------------------
-const words = ["apple", "banana", "strawberry", "kiwi", "mango"];
-
-let length=words.reduce((chr1,chr2)=> (chr2.length > chr1.length)?chr2 :chr1 , "")
-console.log(length);
-
-// ------------------------------------------------------------------
-const numberss = [1, 2, 3, 4, 5];
-
-const reversedArray = numberss.reduce((acc, num) => [num, ...acc], []);
-
-console.log(reversedArray);
+console.log(evenAdd([1, 2, 3, 4, 5]));
