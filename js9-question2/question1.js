@@ -11,7 +11,10 @@
  *
  */
 
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  return strArr.join(",").toLowerCase().split("").filter(chr => chr !== "/" && chr !== " " ).join("").split(",");//وقتی سم سازی تو خونته😐😂
+}
+console.log(tidyUpString(["  /Hello World/ ", "  JavaScript / ", "/ Coding "]));
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

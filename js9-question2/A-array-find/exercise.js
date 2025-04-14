@@ -17,10 +17,10 @@ let names = [
   "Mahjan",
 ];
 
-const  findLongNameThatStartsWithA = // create the function
+const  findLongNameThatStartsWithA = names.find(chr => chr[0] === "A");// create the function
 
 
-let longNameThatStartsWithA = // call the function
+let longNameThatStartsWithA = names.find(chr => chr[0] === "A" && chr.length > 7) // call the function
 
 console.log(longNameThatStartsWithA);
 

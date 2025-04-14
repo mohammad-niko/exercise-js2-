@@ -237,41 +237,41 @@
 // person[key] =["mmad","ali","reza"]
 
 // console.log(person["name"]);
-const students = {
-  student1: {
-    name: "Ali",
-    grades: {
-      math: 18,
-      english: 17,
-      science: 19
-    }
-  },
-  student2: {
-    name: "Sara",
-    grades: {
-      math: 20,
-      english: 19,
-      science: 18
-    }
-  }
-};
-let avreage1 = 0;
-let avreage2 = 0;
-let limietd = 0;
-let avreages = [avreage1 , avreage2]
-for (let key in students){
-  limietd++;
-for(let per in students[key].grades){
-   console.log(students.student1.grades[per]);
-   if(limietd > 2){
-     avreage1 = avreage1 += students.student1.grades[per] 
-   }else if(limietd === 2){
-      avreage2 =avreage2 += students.student1.grades[per] 
-   };
-}
-for(let i = 0 ; i < avreages.length ; i++){
+// const students = {
+//   student1: {
+//     name: "Ali",
+//     grades: {
+//       math: 18,
+//       english: 17,
+//       science: 19
+//     }
+//   },
+//   student2: {
+//     name: "Sara",
+//     grades: {
+//       math: 20,
+//       english: 19,
+//       science: 18
+//     }
+//   }
+// };
+// let avreage1 = 0;
+// let avreage2 = 0;
+// let limietd = 0;
+// let avreages = [avreage1 , avreage2]
+// for (let key in students){
+//   limietd++;
+// for(let per in students[key].grades){
+//    console.log(students.student1.grades[per]);
+//    if(limietd > 2){
+//      avreage1 = avreage1 += students.student1.grades[per] 
+//    }else if(limietd === 2){
+//       avreage2 =avreage2 += students.student1.grades[per] 
+//    };
+// }
+// for(let i = 0 ; i < avreages.length ; i++){
 
-  console.log(`${key}'s average grade is ${avreages[(i / 3)]}`);
-}
-}
-console.log(avreage1 / 3);
+//   console.log(`${key}'s average grade is ${avreages[(i / 3)]}`);
+// }
+// }
+// console.log(avreage1 / 3);

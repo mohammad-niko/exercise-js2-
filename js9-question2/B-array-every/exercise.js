@@ -5,12 +5,12 @@
 const students = ['Hossein', 'Jamal', 'Mehdi', 'Shaden', 'Zaynab', 'Niloofar'];
 const group = ['Niloofar', 'Mehdi', 'Benyamin', 'Zaynab'];
 
-let groupIsOnlyStudents; // complete this statement
+let groupIsOnlyStudents = group.every(chr =>  students.includes(chr));// complete this statement
 
 if (groupIsOnlyStudents) {
   console.log('The group contains only students');
 } else {
-  console.log('The group does not contain only students');
+  console.log('The group does not contain only students');"✅"
 }
 
 /* EXPECTED RESULT */
