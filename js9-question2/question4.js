@@ -5,8 +5,28 @@ Write a function that:
 - the decimal numbers must be rounded to 2 decimal places
 - numbers greater 100 must be replaced with 100 (e.g. 135 => '100%')
 */
+// 1:
+// function formatPercentage(arr) {
+//   let resulet = [];
+//   let arrMap = arr.map((num) => {
+//     if (num > 100) {
+//       resulet.push(`${num - (num - 100)}%`);
+//     } else if (!Number.isInteger(num)) {
+//       resulet.push(`${num.toFixed(2)}%`);
+//     } else {
+//       resulet.push(`${num}%`);
+//     }
+//   });
 
-function formatPercentage(arr) {}
+//   return resulet;
+// }
+// 2:
+function formatPercentage(arr) {
+return arr.map((num) => {
+let harche = num > 100 ? 100 : num;
+ return (Number.isInteger(harche)) ? (`${harche}%`) : (`${harche.toFixed(2)}%`)
+})}
+console.log(formatPercentage([23, 18.103, 187.2, 0.372])); 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

@@ -4,7 +4,11 @@ but the element at the given index(second parameter of the function) should be r
 The function must NOT change the original array, arr.
 */
 
-function remove(arr, index) {}
+function remove(arr, index) {
+  if(!arr || !index) return "invalied value"
+  const copyOfArr = [...arr];
+return copyOfArr.filter(num=> num !== copyOfArr[index])
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

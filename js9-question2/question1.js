@@ -10,10 +10,14 @@
  *
  *
  */
-
-function tidyUpString(strArr) {
-  return strArr.join(",").toLowerCase().split("").filter(chr => chr !== "/" && chr !== " " ).join("").split(",");//وقتی سم سازی تو خونته😐😂
-}
+// 1:
+// function tidyUpString(strArr) {
+//   return strArr.join(",").toLowerCase().split("").filter(chr => chr !== "/" && chr !== " " ).join("").split(",");//وقتی سم سازی تو خونته😐😂
+// }
+// 2:(best practice)
+// function tidyUpString(strArr) {
+//   return strArr.map(str => str.replaceAll("/" ,"").trim().toLowerCase());
+//     }
 console.log(tidyUpString(["  /Hello World/ ", "  JavaScript / ", "/ Coding "]));
 
 /* ======= TESTS - DO NOT MODIFY ===== */

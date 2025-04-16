@@ -17,21 +17,27 @@
   In step 2, you solved the problem without using functions. However, for better practice, you should utilize the provided functions to achieve the same result
 */
 
-function add() {}
+function add(num1 , num2) {
+  return num1 + num2
+}
 
-function multiply() {}
+function multiply(num1 , num2) {
+  return num1 * num2 
+}
 
-function format() {}
+function format(num) {
+  return  `£${num}`
+}
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode;
-
+// i think one of the reasen is we can use this code every weher and we can change numbers when we want.
+let badCode = `£${(startingValue +10) * 2}`
+console.log(badCode);
 /* BETTER PRACTICE */
-
-let goodCode;
-
+let goodCode = format(multiply(add(startingValue ,10),2));
+console.log(goodCode);
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
