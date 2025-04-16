@@ -275,3 +275,31 @@
 // }
 // }
 // console.log(avreage1 / 3);
+// console.log(person.name);
+// // ------------------------------------------------------------------
+// const person = {
+//     name : "mmad",
+//     age : 21,
+//     lastName: "mmady"
+// };
+
+// console.log(person.name);
+// console.log(person["age"]);
+// delete person.lastName;
+// console.log(person);
+// // ------------------------------------------------------------------
+
+const book = {
+    title : "whatever",
+    author : "whoever",
+    "year published" : 1900 ,
+    isRead : "false",
+};
+
+console.log(`title: ${book.title} , author: ${book.author}`);
+ book.isRead = "true";
+ book.rating = 10 ;
+console.log(book);
+
+
+console.log(book[2]);
