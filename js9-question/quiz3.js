@@ -13,7 +13,7 @@ const brands = [
 ];
 function brandsSearch(arr, query) {
   let length = query.length;
-  return arr.filter(chr => chr.substring(query,length) === query )
+  return arr.filter(chr => chr.substring(0,length) === query )
 }
 
 console.log(brandsSearch(brands, 'a')); // result : [ 'asus', 'apple', 'acer' ]
