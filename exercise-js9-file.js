@@ -289,17 +289,34 @@
 // console.log(person);
 // // ------------------------------------------------------------------
 
-const book = {
-    title : "whatever",
-    author : "whoever",
-    "year published" : 1900 ,
-    isRead : "false",
-};
+// const book = {
+//     title : "whatever",
+//     author : "whoever",
+//     "year published" : 1900 ,
+//     isRead : "false",
+// };
 
-console.log(`title: ${book.title} , author: ${book.author}`);
- book.isRead = "true";
- book.rating = 10 ;
-console.log(book);
+// console.log(`title: ${book.title} , author: ${book.author}`);
+//  book.isRead = "true";
+//  book.rating = 10 ;
+// console.log(book);
 
 
-console.log(book[2]);
+// console.log(book[2]);
+
+// // ------------------------------------------------------------------
+// const allFruits = [...fruits +'orange',' mango'];//چرا این این طوری میشه دلیلیشو از چتبی بی تی بپرسم حتام
+// // ------------------------------------------------------------------
+
+// const numbers = [1,2,3,];
+
+// const newNumber = [...numbers ,4,5];
+// console.log(newNumber);
+// console.log(...numbers);
+// // ------------------------------------------------------------------
+
+// const fruits = ['apple','banana'];
+
+// const allFruits = [...fruits ,'orange','mango'];
+// console.log(allFruits);
+// // ------------------------------------------------------------------
