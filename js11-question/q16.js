@@ -8,6 +8,6 @@
  todo: 3. result should be like this ["a", "b", "c", "d", "e", "f", "g"]
 */
 
-const missingLetters = [];
-const arr = ['a', 'b', 'f', 'g'];
-
+const missingLetters = ["c","d","e"];
+const arr = ['a', 'b',...missingLetters, 'f', 'g'];
+console.log(arr);

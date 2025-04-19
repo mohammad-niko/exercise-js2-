@@ -4,3 +4,5 @@
 const students = ['Christina', 'Jon', 'Alexandare'];
 
 // ! Answer
+const [firstName , middleName , lastName]=students;
+console.log(firstName,middleName,lastName);

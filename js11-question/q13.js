@@ -11,3 +11,10 @@ const object1 = {
 };
 
 // output => 'ali writes novels'
+//بار اول این به ذهنم اومد حالا فکر میکنم درست نباشه
+const sentence = Object.keys(object1)
+console.log(...sentence);
+
+//اینم روش دوم
+const makeSen = (obj)=> Object.keys(obj).join(" ");
+console.log(makeSen(object1));

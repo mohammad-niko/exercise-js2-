@@ -7,8 +7,8 @@
  todo: 3. you MUST use both given arguments (num & pwr) inside the func
 */
 
-const sqrFunc = (num, power) => {};
-
+const sqrFunc = (num, power = 2) => num** power;
+console.log(sqrFunc(10));
 // correct: sqrFunc(10) => 100
 // incorrect: sqrFunc(10, 2) => 100
 

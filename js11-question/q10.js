@@ -6,6 +6,10 @@
 // todo5 : rest: all other elements in the array
 // Hint  : You can write a one line function to make this work using : An arrow function and array destructuring in the function argument
 
-const ArrayOfNames = ['Tom', 'Margaret', 'Allison', 'David', 'Pierre'];
+const ArrayOfNames = ["Tom", "Margaret", "Allison", "David", "Pierre"];
 
 // ! Answer
+const func = ([first, second, third, ...rest]) => ({first, second, third, rest}) ;
+console.log(func(ArrayOfNames));
+
+// به به چقدر تمیزه =)    تمیز به روایت تصویر ادم میبینه عشق میکنه

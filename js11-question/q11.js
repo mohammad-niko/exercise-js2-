@@ -11,3 +11,6 @@ const person2 = {
 };
 
 // ! Answer
+const displayName = ({first,last})=> console.log(`${first} ${last}`);
+displayName(person2);
+

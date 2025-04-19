@@ -3,6 +3,7 @@
 // todo2 : pass ‘myClasses’ object to the function.
 // todo3: The function should return this statement ==> "Time to go to {property_value} class!"
 
+
 const myClasses = {
   firstHour: 'Ethics',
   secondHour: 'Programming',
@@ -12,3 +13,8 @@ const myClasses = {
 //   Example Output: "Time to go to Programming class!"
 
 // ! Answer
+function goToSecondClass({secondHour}){
+  return `Time to go to ${secondHour} class`
+}
+
+console.log(goToSecondClass(myClasses));

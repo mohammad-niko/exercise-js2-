@@ -4,3 +4,5 @@
 const moreStudents = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];
 
 //! Answer :
+const [first , [secend , third],[Fourth,fifth]]=moreStudents;
+console.log(first  ,secend, third ,Fourth,fifth);

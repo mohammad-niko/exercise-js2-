@@ -20,3 +20,8 @@ const person = {
 };
 
 // ! Answer
+
+
+const [ ,  ,four] = numbers;
+person.body.legs = four;
+console.log(person);

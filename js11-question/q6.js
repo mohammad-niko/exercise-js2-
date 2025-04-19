@@ -5,9 +5,9 @@
 // todo3 : 'admin' property into the variable 'isAdmin'.(if no such property exists create 'isAdmin' variable and assign false value to that)
 
 let user = { name: 'John', years: 30 };
-
-console.log(name); // John
+// ! Answer
+const {name : firstName , years : age , admin : isAdmin = false} = user
+console.log(firstName); // John
 console.log(age); // 30
 console.log(isAdmin); // false
 
-// ! Answer
