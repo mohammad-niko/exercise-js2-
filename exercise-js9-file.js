@@ -320,3 +320,404 @@
 // const allFruits = [...fruits ,'orange','mango'];
 // console.log(allFruits);
 // // ------------------------------------------------------------------
+// const arr1 = [1,2,3];
+// const arr2 =  [4,5,6];
+
+// console.log([...arr1,...arr2]);
+// function mmad(a,b,c){
+// console.log(a , b ,c ); 
+// }
+// mmad(...arr2)
+// console.log(Math.max(...arr1));
+// // ------------------------------------------------------------------
+// const frontEnd = ['HTML', 'CSS', 'JavaScript'];
+// const backEnd = ['Node.js', 'Express'];
+
+
+// const fullStak = [...frontEnd,...backEnd];
+// console.log(fullStak);
+
+
+
+// function evenNumbers(...nums){
+//     return nums.filter(num => num % 2 === 0)
+// }
+// console.log(evenNumbers(1,354654,364,34,6,4,6,135,16,784,654,34));
+
+
+
+
+// const harchi = ['hamed','ali','asgar'];
+
+
+// const copy = [...harchi];
+
+// console.log(copy);
+
+
+
+// const numbers = [100, 200, 300, 400, 500];
+
+// const [first , ...others] = numbers
+
+// console.log(first);
+
+
+// function multiply(a, b, c) {
+//     return a * b * c;
+//   }
+  
+//   const args = [2, 3, 4];
+
+//   console.log(multiply(...args));
+//   console.log(args);
+
+
+
+
+//   function trimArray(num){
+    
+//     const [one , two , three , fore, five] = num
+//     return [two , three , fore]
+//   }
+
+//   console.log(trimArray([1, 2, 3, 4, 5]));
+
+//   function trimArray(num){
+    
+//     const [_ , ...others] = num;
+//     others.pop()
+//     console.log(others);
+//     return [others]
+//   }
+
+//   console.log(trimArray([1, 2, 3, 4, 5]));
+
+// // ------------------------------------------------------------------
+
+
+
+// const person = {
+//     name: "Ali",
+//     age: 25
+//   };
+  
+//   const { name, age } = person;
+//   console.log(name); // "Ali"
+//   console.log(age);  // 25
+
+// ------------------------------------------------------------------
+
+
+// const user = {
+//   name:"mmad",
+//   lastName:"nik",
+//   age:50,
+//   email:"mmad@email.com",
+//   city:"LA"
+// };
+
+//    این جا چند تا متود خفت واسه ابجکت ها داریم به به✅😂
+// console.log(Object.assign(user,{eyes:"balck"}));
+// console.log(Object.freeze(user));
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+// console.log(Object.entries(user));
+// console.log(Object.hasOwn(user,"age"));
+
+
+
+// const haarchi = Object.entries(user);
+
+// const [[name,nameValue]] = haarchi;
+// console.log(name,nameValue);
+
+// ------------------------------------------------------------------
+// const user = {
+//     firstNamee : "mmad",
+//     lastName : "nik",
+//     age : 55,
+//     addres : {
+// city : "tab"
+//     },
+//     family : undefined
+// };
+
+// const {firstNamee :name , lastName,age,addres:{city}, family = 'yes'} = user
+
+
+// console.log(family);
+
+
+
+// function showUser({ name, age , city }) {
+//     console.log(`${name} is ${age}${city} years old.`);
+//   }
+  
+//   showUser({ name: "Hamed", age: 30 ,city : 'tab'});
+
+
+//   function getDate() {
+//     return [1,2,3];
+//   };
+
+//   const [z,x,m,j] = getDate();
+
+//   console.log(z ,x,m,j);
+
+
+
+
+
+
+
+
+//   const person = {
+//     name: "Nima",
+//     age: 30,
+//     job: "Developer",
+//     city: "Tehran"
+//   };
+
+
+//   const {name , age } = person ;
+
+//   console.log(`${name} is ${age} yers old`);
+
+
+
+
+//   const numbers = [10, 20, 30, 40];
+//   const [first , _ , third] = numbers;
+
+//   console.log(first + third);
+
+
+
+
+
+
+//   const data = {
+//     user: {
+//       name: "Sara",
+//       contact: {
+//         email: "sara@mail.com",
+//         phone: "123"
+//       }
+//     }
+//   };
+
+//   const { user:{contact:{email ,phone}} } = data;
+
+//   console.log(email);
+
+
+
+
+
+//   const user = {
+//     name: "Ali"
+//   };
+
+
+//   const {name , job = "freelancer"}=user;
+
+
+//   console.log(  `${name} is ${job}`);
+  
+
+
+
+// const user = {
+//     name: "Saba",
+//     age: 28,
+//     job: "Designer"
+//   };
+
+//   function userData({name , age}){
+//     console.log(name,age);
+//     return  `${name} is ${age}`
+//   }
+//   console.log(userData(user));
+
+
+// const userInfo = {
+//     username: "reza123",
+//     email: "reza@mail.com",
+//     age: 27,
+//     password: "secret"
+//   }
+
+
+
+//   const {password , ...others} = userInfo;
+//   console.log(others);
+
+
+
+
+
+// function calculate(a, b) {
+//     const add = a + b;
+//     const subtract = a - b;
+//     const multiply = a * b;
+//     const divide = a / b;
+  
+//     return [add, subtract, multiply, divide];
+//   }
+  
+//   const [add, subtract, multiply, divide] = calculate(4, 7);
+  
+// console.log(divide);  
+
+
+
+
+// const fields = ["name", "email", "phone"];
+// const values = ["Ali", "ali@mail.com", "12345"];
+
+// const obj = {};
+
+// fields.forEach((mmad, i) => {
+//   obj[mmad] = values[i];
+// });
+
+// console.log(obj);
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+
+
+//خیلی مهمه🔥🔥🔥
+// const fieleds = ['name','email','phona'];
+// const values = ['ali','ali@email.com','0654865'];
+// const obj={};
+
+// fieleds.forEach((fieled , i)=>obj[fieled]=values[i])
+// console.log(obj);
+
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+
+
+
+
+// const keys = ['title', 'author', 'year'];
+// const values = ['Clean Code', 'Robert C. Martin', 2008];
+
+// function createBookObject(par1,par2){
+// const obj = {};
+//     par1.forEach((key,i) => obj[key]=par2[i]);
+// return obj
+// };
+// console.log(createBookObject(keys,values));
+
+
+
+
+// const user = {
+//     name: "Ali",
+//     age: 25,
+//     password: "secret123",
+//     email: "ali@mail.com"
+//   };
+
+//   const {name,email, ...others} =user;
+
+// console.log(name ,email,others);
+
+
+
+// function evenNubers(...num){
+//    return num.filter(num => num % 2 === 0).length
+// }
+// console.log(evenNubers(1,2,3,4,5,65552,85,658,4,25,8,2,58,4,1,21,588,4));
+
+
+
+// const movie = {
+//     title: "Inception",
+//     director: "Nolan",
+//     year: 2010,
+//     rating: 8.8
+//   };
+
+//   function harchi({title,year}) {
+//     return `${title} : ${year}`
+//   }console.log(harchi(movie));
+
+// ----------------------------------------------------------------------------------------------------------------
+// ? یک تابع بنویس که آرایه‌ای از رنگ‌ها بگیره
+// todo: خروجی باید آبجکتی باشه با:
+// firstColor, secondColor, otherColors
+// Hint: از destructuring و shorthand استفاده کن
+
+const getColors = (colorsArray) => {
+    // اینجا بنویس
+  };
+  
+  console.log(getColors(["red", "blue", "green", "yellow"]));
+  // Output => { firstColor: 'red', secondColor: 'blue', otherColors: ['green', 'yellow'] }
+
+  
+
+
+
+
+
+
+
+  // ? یک تابع بنویس که آبجکت user بگیره
+// todo: ازش name و age رو جدا کن، username و country اگر نبودن مقدار پیش‌فرض داشته باشن
+
+const greetUser = ({ name, age, username = "guest", country = "unknown" }) => {
+    // یک greeting خوشگل برگردون
+  };
+  
+  console.log(greetUser({ name: "Ali", age: 24 }));
+  // Output => Hello Ali (24), your username is guest from unknown.
+
+  
+
+
+
+  // ? یک تابع که آرایه‌ای از اطلاعات یک دوره بگیره
+// todo: ورودی مثل اینه: ['JavaScript', 'Ali', 20, 8]
+// todo: خروجی آبجکتی باشه مثل:
+// { course: 'JavaScript', teacher: 'Ali', sessions: 20, duration: 8 }
+
+const courseInfo = ([course, teacher, sessions, duration]) => {
+    // اینجا بنویس
+  };
+  
+  console.log(courseInfo(['JavaScript', 'Ali', 20, 8]));
+
+  
+
+
+
+
+
+  // ? دو تا آبجکت کاربر بگیر، و اطلاعاتشون رو توی یک آبجکت ترکیب کن
+// Hint: از spread استفاده کن
+
+const combineUsers = (user1, user2) => {
+    // اینجا بنویس
+  };
+  
+  console.log(combineUsers({ name: "Ali", age: 25 }, { email: "ali@mail.com", isAdmin: false }));
+  // Output => { name: 'Ali', age: 25, email: 'ali@mail.com', isAdmin: false }
+
+  
+
+
+
+
+
+  // ? تابعی بنویس که یک آبجکت کتاب بگیره و خلاصه‌ای ازش بسازه
+// Input: { title: 'Clean Code', author: 'Robert C. Martin', year: 2008 }
+// Output: 'Clean Code (2008) by Robert C. Martin'
+
+const getBookSummary = (book) => {
+    // از destructuring و template literal استفاده کن
+  };
+  
