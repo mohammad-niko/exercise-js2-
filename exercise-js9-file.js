@@ -646,21 +646,20 @@
 //   }console.log(harchi(movie));
 
 // ----------------------------------------------------------------------------------------------------------------
-// ? یک تابع بنویس که آرایه‌ای از رنگ‌ها بگیره
-// todo: خروجی باید آبجکتی باشه با:
+// // ? یک تابع بنویس که آرایه‌ای از رنگ‌ها بگیره
+// // todo: خروجی باید آبجکتی باشه با:
 // firstColor, secondColor, otherColors
 // Hint: از destructuring و shorthand استفاده کن
 
-const getColors = (colorsArray) => {
-    // اینجا بنویس
-  };
+// const getColors = (firstColor , secondColor , ...otherColors) => ({firstColor,secondColor,otherColors});
   
-  console.log(getColors(["red", "blue", "green", "yellow"]));
+//   console.log(getColors(...["red", "blue", "green", "yellow"]));
   // Output => { firstColor: 'red', secondColor: 'blue', otherColors: ['green', 'yellow'] }
 
   
 
 
+// ----------------------------------------------------------------------------------------------------------------
 
 
 
@@ -669,14 +668,13 @@ const getColors = (colorsArray) => {
   // ? یک تابع بنویس که آبجکت user بگیره
 // todo: ازش name و age رو جدا کن، username و country اگر نبودن مقدار پیش‌فرض داشته باشن
 
-const greetUser = ({ name, age, username = "guest", country = "unknown" }) => {
-    // یک greeting خوشگل برگردون
-  };
+// const greetUser = ({ name, age, username = "guest", country = "unknown" }) => ` Hello ${name} (${age}), your username is ${username} from ${country}`;
   
-  console.log(greetUser({ name: "Ali", age: 24 }));
-  // Output => Hello Ali (24), your username is guest from unknown.
+//   console.log(greetUser({ name: "Ali", age: 24 }));
+//   // Output => Hello Ali (24), your username is guest from unknown.
 
   
+// ----------------------------------------------------------------------------------------------------------------
 
 
 
@@ -685,31 +683,29 @@ const greetUser = ({ name, age, username = "guest", country = "unknown" }) => {
 // todo: خروجی آبجکتی باشه مثل:
 // { course: 'JavaScript', teacher: 'Ali', sessions: 20, duration: 8 }
 
-const courseInfo = ([course, teacher, sessions, duration]) => {
-    // اینجا بنویس
-  };
+// const courseInfo = ([course, teacher, sessions, duration]) => ({course,teacher,sessions,duration});
   
-  console.log(courseInfo(['JavaScript', 'Ali', 20, 8]));
+//   console.log(courseInfo(['JavaScript', 'Ali', 20, 8]));
 
   
 
+// ----------------------------------------------------------------------------------------------------------------
 
 
 
 
-  // ? دو تا آبجکت کاربر بگیر، و اطلاعاتشون رو توی یک آبجکت ترکیب کن
-// Hint: از spread استفاده کن
+//   // ? دو تا آبجکت کاربر بگیر، و اطلاعاتشون رو توی یک آبجکت ترکیب کن
+// // Hint: از spread استفاده کن
 
-const combineUsers = (user1, user2) => {
-    // اینجا بنویس
-  };
+// const combineUsers = (user1, user2) => ({...user1,...user2});
   
-  console.log(combineUsers({ name: "Ali", age: 25 }, { email: "ali@mail.com", isAdmin: false }));
+//   console.log(combineUsers({ name: "Ali", age: 25 }, { email: "ali@mail.com", isAdmin: false }));
   // Output => { name: 'Ali', age: 25, email: 'ali@mail.com', isAdmin: false }
 
   
 
 
+// ----------------------------------------------------------------------------------------------------------------
 
 
 
@@ -717,7 +713,6 @@ const combineUsers = (user1, user2) => {
 // Input: { title: 'Clean Code', author: 'Robert C. Martin', year: 2008 }
 // Output: 'Clean Code (2008) by Robert C. Martin'
 
-const getBookSummary = (book) => {
-    // از destructuring و template literal استفاده کن
-  };
+// const getBookSummary = ({title , author , year}) => `${title} ${(year)} by ${author}`;
   
+// console.log(getBookSummary({ title: 'Clean Code', author: 'Robert C. Martin', year: 2008 }));

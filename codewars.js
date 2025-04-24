@@ -73,3 +73,130 @@
 
 //   return rezult;
 // }
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// const keysAndValues = (data) => {
+//     const keys = Object.keys(data);
+//     const values = Object.values(data);
+//     return  keys,values
+// };
+
+// const keysAndValues = (data) => [Object.keys(data), Object.values(data)];
+// console.log(keysAndValues({ a: 1, b: 2, c: 3 }));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// const digitize = (nums) => [...String(nums)].reverse().map(num=>Number(num));
+//   console.log(digitize(35231));
+//   console.log(digitize(0));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// const animal = ({name,legs,color})=> `This ${color} ${name} has ${legs} legs`  ;
+//   console.log(animal({ name: "dog", legs: 4, color: "white" }));
+
+//   "This white dog has 4 legs."
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// const arrayToObject = (arr) => {
+//   let keys = arr.filter((chr, i) => arr.indexOf(chr) === i);
+// // const mySet = [...new Set(arr)] like this
+//   let values = keys.map((chr) => arr.filter((arrch) => chr === arrch).length);
+//   return keys.reduce((obj, key, i) => {
+//     obj[key] = values[i];
+//     return obj;
+//   }, {});
+// };
+// console.log(arrayToObject(["a", "a", "e", "e", "i", "o", "o", "o", "o"]));
+// console.log(arrayToObject([1,1,1,2,2,3,4,4,4]));
+// const objectToArray = (obj) => {
+//   const keys = Object.keys(obj);
+//   const values = Object.values(obj);
+// return keys.reduce((arr, key, i) => {
+//     const repeated = Array(values[i]).fill(isNaN(key) ? key : Number(key));
+//     return arr.concat(repeated);
+//   }, []);
+//    };
+// console.log(objectToArray(arrayToObject(["a", "a", "e", "e", "i", "o", "o", "o", "o"])));
+// console.log(objectToArray(arrayToObject([1,1,1,2,2,3,4,4,4])));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+//اینو حتما بگم به علی تا برسیش کنیم
+// const arrayToObject = (arr) => {
+//   return arr.reduce((obj, item) => {
+//     obj[item] = (obj[item] || 0) + 1;
+//     return obj;
+//   }, {});
+// };
+//و این هم همین طور
+// const objectToArray = (obj) => {
+//   const keys = Object.keys(obj);
+//   const values = Object.values(obj);
+// return keys.reduce((arr, key, i) => {
+//     const repeated = Array(values[i]).fill(isNaN(key) ? key : Number(key));
+//     return arr.concat(repeated);
+//   }, []);
+//    };
+//و همچنین اینا
+// const arrayToObject = a => a.reduce( (acc,v) => ( acc[v] = acc[v] + 1 || 1 , acc ) , {} ) ;
+// const objectToArray = o => [].concat( ... Object.keys(o).map( i => Array.from( { length: o[i] }, () => Number(i) || i ) ) ) ;
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// const countPositivesSumNegatives = (input) => {
+//   if (!input || input.length === 0) return [];
+//   const integer = input.filter((x) => x > 0).length;
+//   const harchi = input
+//     .filter((x) => x < 0)
+//     .reduce((acc, i) => acc + i, 0);
+// return [integer,harchi]
+// };
+// console.log(
+//   countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14])
+// );
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// function removeEveryOther(arr){
+//   let result = [];
+// for(let i = 0 ; i < arr.length ; i += 2){
+// result.push(arr[i])
+// }
+// return result
+// };
+// console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+// console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// const  combine =(...objOfArr) => {
+// return objOfArr.map(obj => Object.values(obj))
+// };
+// console.log(combine({ a: 10, b: 20, c: 30 },{ a: 3, c: 6, d: 3 },{ a: 5, d: 11, e: 8 }));
+//  console.log({...{ a: 10, b: 20, c: 30 },...{ a: 3, c: 6, d: 3 }});
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// const differenceInAges = (ages) => {❌
+//   const min = Math.min(...ages);
+//   const max = Math.max(...ages);
+// return [min,max,(max-min)]
+// };
+// console.log(differenceInAges([57, 99, 14, 32]));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// const aliasGen = (first, last) => {
+//   const firstChar = first[0].toUpperCase();
+//   const lastChar = last[0].toUpperCase();
+//   if (!/^[A-Z]$/.test(firstChar) || !/^[A-Z]$/.test(lastChar)) {
+//     return "Your name must start with a letter from A - Z.";
+//   };
+//   return `${firstName[firstChar]} ${surname[lastChar]}`;
+// };
+// // console.log(aliasGen("Mike", "Millington"));
+// // console.log(aliasGen("Mike", "25584878"));
+// console.log(aliasGen("q71qm", "yghxi"));
+// ------------------------------------------------------------------------------------------------------------------------------------------
