@@ -173,30 +173,51 @@
 // console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 // console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
 // ------------------------------------------------------------------------------------------------------------------------------------------
-// const  combine =(...objOfArr) => {
-// return objOfArr.map(obj => Object.values(obj))
-// };
-// console.log(combine({ a: 10, b: 20, c: 30 },{ a: 3, c: 6, d: 3 },{ a: 5, d: 11, e: 8 }));
-//  console.log({...{ a: 10, b: 20, c: 30 },...{ a: 3, c: 6, d: 3 }});
-// ------------------------------------------------------------------------------------------------------------------------------------------
 
-// const differenceInAges = (ages) => {❌
-//   const min = Math.min(...ages);
-//   const max = Math.max(...ages);
-// return [min,max,(max-min)]
-// };
-// console.log(differenceInAges([57, 99, 14, 32]));
-// ------------------------------------------------------------------------------------------------------------------------------------------
+// const differenceInAges = (ages) => {
+  //   const min = Math.min(...ages);
+  //   const max = Math.max(...ages);
+  // return [min,max,(max-min)]
+  // };
+  // console.log(differenceInAges([57, 99, 14, 32]));
+  // ------------------------------------------------------------------------------------------------------------------------------------------
+  
+  // const aliasGen = (first, last) => {
+    //   const firstChar = first[0].toUpperCase();
+    //   const lastChar = last[0].toUpperCase();
+    //   if (!/^[A-Z]$/.test(firstChar) || !/^[A-Z]$/.test(lastChar)) {
+      //     return "Your name must start with a letter from A - Z.";
+      //   };
+      //   return `${firstName[firstChar]} ${surname[lastChar]}`;
+      // };
+      // // console.log(aliasGen("Mike", "Millington"));
+      // // console.log(aliasGen("Mike", "25584878"));
+      // console.log(aliasGen("q71qm", "yghxi"));
+  // ------------------------------------------------------------------------------------------------------------------------------------------
+      
+  //     const  combine =(...objOfArr) => {❌❌❌❌❌
+  //  const objEntries = objOfArr.map(obj =>{
 
-// const aliasGen = (first, last) => {
-//   const firstChar = first[0].toUpperCase();
-//   const lastChar = last[0].toUpperCase();
-//   if (!/^[A-Z]$/.test(firstChar) || !/^[A-Z]$/.test(lastChar)) {
-//     return "Your name must start with a letter from A - Z.";
-//   };
-//   return `${firstName[firstChar]} ${surname[lastChar]}`;
-// };
-// // console.log(aliasGen("Mike", "Millington"));
-// // console.log(aliasGen("Mike", "25584878"));
-// console.log(aliasGen("q71qm", "yghxi"));
-// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  // });
+  // return 
+  // };
+  //     console.log(combine({ a: 10, b: 20, c: 30 },{ a: 3, c: 6, d: 3 },{ a: 5, d: 11, e: 8 }));
+  //     //  console.log(combine({ a: 10, b: 20, c: 30 },{ a: 3, c: 6, d: 3 }));
+
+
+
+
+      // ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+  //  const ìsZeroBalanced = arr => {💔❌
+  //   if(arr.length === 0 ) return false ;
+  // for(let i = 0 ; i < arr.length ; i + 2 ){
+  //       console.log( arr[i] == (-1 * arr[i + 1]));
+  // }
+  //       return 
+  //     };
+  //     console.log(ìsZeroBalanced([3 ,-3,-2,-1]));
