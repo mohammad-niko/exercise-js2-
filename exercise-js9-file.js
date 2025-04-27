@@ -763,3 +763,19 @@
 // return result
 // };
 // console.log(hhh.mmad((n)=> n * 2));
+
+// let name = "Global Name";
+
+// function outer() {
+//   let name = "Outer Name";
+
+//   function inner() {
+//     console.log(this.name);
+//   }
+
+//   inner();
+// }
+
+// outer();
+
+// ----------------------------------------------------------------------------------------------------------------
