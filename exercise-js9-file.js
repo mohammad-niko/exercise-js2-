@@ -779,3 +779,84 @@
 // outer();
 
 // ----------------------------------------------------------------------------------------------------------------
+
+// console.dir(document);
+
+// const heading = document.querySelector("h1");
+// heading.innerText = "oh is change";
+
+// const byId = document.getElementById("with-id");
+
+// console.log(byId);
+
+// const allH1Tags = document.getElementsByTagName("h1");
+
+// console.log(allH1Tags);
+
+// const hading = document.getElementsByClassName("lalala")
+
+// console.log(hading);
+// console.dir(hading)
+
+// const firstBtn = document.querySelector(".btn");
+
+// console.log(firstBtn);
+
+// firstBtn.style.backgroundColor = "lightblue";
+
+// const allBtn = document.querySelectorAll(".btn");
+
+// allBtn.forEach(btn => btn.style.backgroundColor="lightgreen")
+
+// console.log(allBtn);
+
+// const specialBtn = document.querySelector('.special');
+// specialBtn.style.backgroundColor = 'gold';
+// specialBtn.style.color = 'black';
+
+// console.dir(specialBtn);
+
+// const showH1= document.querySelector(".lalala");
+// // showH1.innerText = "aga mmad"
+// console.log(showH1.innerText);
+
+// const container = document.querySelector("#container");
+
+// container.innerHTML ="<p>hi <strong>good frind</strong></p>";
+
+
+const mmad = document.querySelector("h1");
+// // mmad.classList.add("aahh");
+// // mmad.classList.remove("aahh");
+// // mmad.classList.toggle("lalalalalh");
+// // mmad.classList.contains("SDFGSDFH")
+
+// mmad.style.color = "black";
+// mmad.style.backgroundColor = "red";
+// mmad.style.fontSize = "50px";
+// mmad.style.display = "none"
+// console.log(mmad.getAttribute("class"));
+
+
+// const img = document.querySelector(".la");
+// img.setAttribute("src" , "https://images.squarespace-cdn.com/content/v1/609cd635381d020cf289d7c2/6f6a16f8-e3c6-429f-bcbd-3565da2f7bfc/mmad-tag.jpg")
+// img.setAttribute("alt" , "mmad imgs")
+// img.setAttribute("alt","mmad is buty");
+
+// console.log(window.getComputedStyle(mmad).font);
+
+
+// const google = document.querySelector("#googleLink");
+// google.href='https://openai.com'
+// console.log(google.getAttribute("href"));
+
+
+
+
+// const child = document.querySelector("#child");
+// console.log(child.parentElement); // <div id="parent">...</div>
+
+
+
+const parent = document.querySelector("p");
+console.log(parent.nextSibling); 
