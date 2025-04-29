@@ -4,3 +4,33 @@
 // todo-3:call the innerFunc in the outerFunc.
 
 // !Answer:
+
+function outerFunc(num1,num2,callBack) {
+
+return callBack(num1,num2);
+    
+}
+
+
+function innerFunc(a ,b) {
+    
+return a * b ;
+}
+
+
+
+
+outerFunc(21,2,innerFunc)
+
+
+// or
+
+function outerFunc(func) {
+    console.log(func(21, 2));
+}
+
+function innerFunc(num1, num2) {
+    return num1 * num2;
+}
+
+outerFunc(innerFunc);
