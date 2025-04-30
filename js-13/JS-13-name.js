@@ -146,3 +146,31 @@ const names = [
   "Naomi",
 ];
 //! Answer:
+
+const divElment = document.querySelector(".divElment");
+
+let user;
+while (true) {
+  user = prompt("write one latter jest one alphabet latter❤️")
+    .trim()
+    .toUpperCase();
+  console.log(user);
+  if (
+    user.length === 1 &&
+    user.charCodeAt(0) >= 65 &&
+    user.charCodeAt(0) <= 90
+  ) {
+    const filterName = names.filter((name) => name[0] === user);
+
+    for (let i = 0; i < filterName.length; i++) {
+      const divEl = document.createElement("div");
+      divEl.textContent = filterName[i];
+      divElment.appendChild(divEl);
+    }
+    console.log(filterName);
+
+    break;
+  } else {
+    alert("please write jest one alphabet latter🙂❤️");
+  }
+}

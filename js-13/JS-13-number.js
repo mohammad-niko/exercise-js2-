@@ -9,3 +9,22 @@ num2 = 3
 */
 
 //! Answer:
+
+function randomNum() {
+  return Math.floor(Math.random() * 16);
+}
+
+let numArr = [randomNum(), randomNum()];
+let [firstRandom,secendRandom] = numArr;
+console.log(numArr);
+let newArrayOfNumber = [firstRandom, secendRandom];
+let whileNum = 0;
+while (whileNum < 8) {
+  const num =
+    (newArrayOfNumber[newArrayOfNumber.length - 2] +
+      newArrayOfNumber[newArrayOfNumber.length - 1]) *
+    2;
+  newArrayOfNumber.push(num);
+  ++whileNum;
+}
+console.log(newArrayOfNumber);

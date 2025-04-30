@@ -8,3 +8,12 @@ Example: If the user enters the number 3, the numbers will be printed like this:
 1, 2, hop, 4, 5, hop, 7, 8, hop, 10 ..., 200 
 */
 //! Answer:
+
+const user = prompt("give me number between 2 and 6");
+ if(user >= 2 && user <= 6){
+    for(let i =1 ; i <= 200 ; i++){
+
+(i % +user === 0) ? console.log("hop") : console.log(i);
+}}else{
+    console.log("Invalid  value Please enter a number between 2 and 6");
+}
