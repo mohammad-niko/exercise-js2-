@@ -824,8 +824,7 @@
 
 // container.innerHTML ="<p>hi <strong>good frind</strong></p>";
 
-
-const mmad = document.querySelector("h1");
+// const mmad = document.querySelector("h1");
 // // mmad.classList.add("aahh");
 // // mmad.classList.remove("aahh");
 // // mmad.classList.toggle("lalalalalh");
@@ -837,7 +836,6 @@ const mmad = document.querySelector("h1");
 // mmad.style.display = "none"
 // console.log(mmad.getAttribute("class"));
 
-
 // const img = document.querySelector(".la");
 // img.setAttribute("src" , "https://images.squarespace-cdn.com/content/v1/609cd635381d020cf289d7c2/6f6a16f8-e3c6-429f-bcbd-3565da2f7bfc/mmad-tag.jpg")
 // img.setAttribute("alt" , "mmad imgs")
@@ -845,18 +843,182 @@ const mmad = document.querySelector("h1");
 
 // console.log(window.getComputedStyle(mmad).font);
 
-
 // const google = document.querySelector("#googleLink");
 // google.href='https://openai.com'
 // console.log(google.getAttribute("href"));
 
-
-
-
 // const child = document.querySelector("#child");
 // console.log(child.parentElement); // <div id="parent">...</div>
 
+// const parent = document.querySelector("p");
+// console.log(parent.nextSibling);
 
+// --------------------------------------------------------------------------------------------------------------
+// const body = document.querySelector("body");
+// const div = document.querySelector("div");
+// const span = document.createElement("span");
+// div.innerHTML = "<p>mmad is here</p>";
+// div.innerHTML = "<p><span>mmad</span> is here</p>";
+// span.innerHTML = div.innerHTML;
+// body.append(span);
 
-const parent = document.querySelector("p");
-console.log(parent.nextSibling); 
+// console.log(body.innerHTML);
+// --------------------------------------------------------------------------------------------------------------
+
+// const h1 = document.querySelector("#by-id");
+
+// h1.textContent = "Welcome , Master 🔥!";
+
+// h1.classList.add("highlight");
+
+// // console.log(h1.id);
+
+// h1.style.color = "purple";
+
+// h1.style.fontSize = "3rem";
+
+// h1.classList.add("mmad");
+
+// h1.classList.toggle("mmad");
+
+// // console.log(h1.getAttribute("class"));
+
+// const btn = document.querySelector(".btn");
+// btn.addEventListener("click", () => {
+//   const harchi = document.querySelector(".toggle");
+//   if (h1.classList.contains("toggle")) {
+//     harchi.textContent = "king is back🔥🔥🔥";
+//   } else {
+//     h1.textContent = "Welcome , Master 🔥!";
+//   }
+
+//   h1.classList.toggle("toggle");
+// });
+
+// const pTag = document.createElement("p");
+// const body = document.querySelector("body");
+// body.appendChild(pTag);
+
+// pTag.innerHTML = "<a href='https://google.com'>go goole</a>";
+
+// const p = document.querySelector("p");
+// p.textContent = "<strong>Bold?</strong>";
+
+// const classLists = ["add", "remove"];
+
+// for (let i = 0; i < classLists.length; i++) {
+//   const btn = document.createElement("button");
+//   body.appendChild(btn);
+//   btn.textContent = `${classLists[i]}`;
+
+//   btn.addEventListener("click", () => {
+//     p.classList[classLists[i]]("active");
+//     console.log(p.classList);
+//   });
+// }
+
+// const h1 = document.querySelector("#by-id");
+// const btn = document.querySelector(".btn");
+
+// h1.textContent = "welcome , Master!🔥";
+
+// btn.addEventListener("click", () => {
+//   h1.classList.toggle("showe");
+//   if (h1.classList.contains("showe")) {
+//     const span = document.createElement("span");
+//     h1.textContent = "king is here!❤️🔥";
+//     span.textContent = "👑";
+//     h1.appendChild(span);
+//     h1.style.color = "purple";
+//     console.log(window.getComputedStyle(h1).color);
+//   } else {
+//     h1.textContent = "welcome , Master!🔥";
+//     h1.style.color = "gold";
+//     console.log(window.getComputedStyle(h1).color);
+//   }
+// });
+
+// console.log(window.getComputedStyle(h1).color);
+
+// const btns = document.querySelectorAll(".delete-btn");
+
+// btns.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     const card = btn.parentElement;
+
+//     // اول کلاس fade-out رو اضافه کن تا انیمیشن اجرا شه
+//     card.classList.add("fade-out");
+
+//     // بعد از 500 میلی‌ثانیه (مدت انیمیشن) حذف کن
+//     setTimeout(() => {
+//       card.remove();
+//     }, 500);
+//   });
+// });
+
+// const ul = document.querySelectorAll("ul li");
+
+// ul.forEach((li) => {
+//   li.addEventListener("click", () => {
+//     if(li.previousElementSibling)li.previousElementSibling.style.color = "green";
+//     if(li.nextElementSibling)li.nextElementSibling.style.color = "red";
+//   });
+// });
+// const headers = document.querySelectorAll(".accordion-header");
+
+// headers.forEach((header) => {
+//   header.addEventListener("click", () => {
+//     // پیدا کردن content مربوط به این header
+//     const content = header.nextElementSibling;
+
+//     // چک کنیم آیا همین الان بازه؟
+//     if (content.style.display === "block") {
+//       // اگه بازه، ببندش
+//       content.style.display = "none";
+//     } else {
+//       // اول همه‌ی content ها رو ببند
+//       const allContents = document.querySelectorAll(".accordion-content");
+//       allContents.forEach((c) => (c.style.display = "none"));
+
+//       // بعد این یکی رو باز کن
+//       content.style.display = "block";
+//     }
+//   });
+// });
+
+// const btns = document.querySelectorAll(".tab-btn");
+
+// btns.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     const contant = btn.nextElementSibling;
+//     if (contant.style.display === "block") {
+//       contant.style.display = "none";
+//     } else {
+//       const allContant = document.querySelectorAll(".tab-content");
+//       allContant.forEach((c) => c.style.display === "none");
+//       contant.style.display = "block";
+//     }
+//   });
+// });
+
+// const btn = document.querySelector("#add-comment");
+// const comments = document.querySelector(".comments-section");
+// const title = document.querySelector("h2");
+// btn.addEventListener("click", () => {
+//   const div = document.createElement("div");
+//   div.textContent = "New comment added!💔🚶‍♂️";
+//   title.insertAdjacentElement("afterend", div);
+// });
+
+// const gfks = document.querySelector("h1");
+// const dalkn = document.querySelector("p");
+// gfks.style.display = "none";
+// dalkn.style.display = "none";
+// window.addEventListener("beforeprint", () => {
+//   gfks.style.display = "block";
+// dalkn.style.display = "block";
+// });
+// window.addEventListener("afterprint", () => {
+//   gfks.style.display = "none";
+// dalkn.style.display = "none";
+// });
