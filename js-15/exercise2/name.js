@@ -4,6 +4,8 @@
 // todo-3: append the created element in the selected element.
 // Note: to set the color for each person based on their gender, you can use the "girl" or "boy" class.(you can check name.html)
 
+const namesContainer = document.querySelector("#namesContainer");
+
 const names = [
   {
     id: 0,
@@ -261,3 +263,12 @@ const names = [
     gender: "boy",
   },
 ];
+
+names.forEach(({ name, gender }) => {
+  const span = document.createElement("span");
+  span.innerText = `${name}`;
+  namesContainer.appendChild(span);
+  span.classList.add(gender);
+  span.classList.add("person");
+  span.style.margin = "1rem";
+});
