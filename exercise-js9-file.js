@@ -1022,3 +1022,81 @@
 //   gfks.style.display = "none";
 // dalkn.style.display = "none";
 // });
+
+// window.addEventListener('resize', function() {
+//     console.log('Screen resized! New width:', window.innerHeight);
+//   });
+
+// document.addEventListener('keydown', function(event) {
+//     console.log('Key down:', event.key);
+//   });
+//   document.addEventListener('keyup', function(event) {
+//     console.log('Key up:', event.key);
+//   });
+//   window.addEventListener('scroll', function() {
+//     console.log('Page scrolled! Scroll Y:', window.scrollY);
+//   });
+
+// document.addEventListener('keydown', function(event) {
+//     console.log('Key pressed:', event.key);
+//     console.log('Code:', event.code);
+//     console.log('Code:', event.altKey);
+//     console.log('Code:', event.ctrlKey);
+//   });
+// document.querySelector('button').addEventListener('click', function(event) {
+//     console.log('this:', this);
+//     console.log('event.target:', event.target);
+//   });
+// document.getElementById('parent').addEventListener('click', function() {
+//     console.log('Parent clicked');
+//   });
+
+//   document.getElementById('child').addEventListener('click', function() {
+//     console.log('Button clicked');
+//   });
+
+// const topBtn = document.getElementById("topBtn");
+
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY > 200) {
+//     topBtn.style.display = "block";
+//   } else {
+//     topBtn.style.display = "none";
+//   }
+// });
+
+// topBtn.addEventListener("click", function () {
+//   window.scrollTo({ top: 0, behavior: "smooth" });
+// });
+// document.getElementById('parent').addEventListener('click', function(event) {
+//     console.log('this:', this);          // همیشه div#parent
+//     console.log('event.target:', event.target);  // دقیقاً همونی که کلیک شد (دکمه یا div)
+//   });
+
+//   event.stopPropagation()
+
+// document.getElementById('list').addEventListener('click', function(event) {
+//     if (event.target.tagName === 'LI') {
+//       console.log('You clicked on', event.target.textContent);
+//     }
+//     console.log(event.target.tagName);
+//   });
+
+// Array.prototype.customMap= function (func) {
+//     let result  = [];
+//   for (let i = 0; i < this.length; i++) {
+//     result.push(func(this[i]))
+//   }
+//   return result
+// };
+// let mmad = [1, 2, 3, 4];
+
+
+// console.log(mmad.customMap((n) => n * 2));
+
+
+const button = document.getElementById('button');
+button.addEventListener('click', () => {
+const input = document.querySelector("#checkbox");
+input.setAttribute(unabled)
+});
