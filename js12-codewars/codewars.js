@@ -2,10 +2,10 @@
 Complete the following CodeWars exercises. 
 
 1. Create Phone Number
-https://www.codewars.com/kata/525f50e3b73515a6db000b83 
+https://www.codewars.com/kata/525f50e3b73515a6db000b83 ✅
 
 2. Find the odd int 
-https://www.codewars.com/kata/54da5a58ea159efa38000836
+https://www.codewars.com/kata/54da5a58ea159efa38000836✅
 
 3. Find the unique number
 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
