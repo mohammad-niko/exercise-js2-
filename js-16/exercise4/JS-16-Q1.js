@@ -7,6 +7,8 @@
 
 const call = {
   caller: "mom",
-  // says: function() {}
+  says: function() {
+    console.log(`>>>>> Hey, ${this.caller} just called`);
+  }
 };
 call.says(); //>>>>> Hey, mom just called.
