@@ -8,7 +8,7 @@ https://www.codewars.com/kata/525f50e3b73515a6db000b83 ✅
 https://www.codewars.com/kata/54da5a58ea159efa38000836✅
 
 3. Find the unique number
-https://www.codewars.com/kata/585d7d5adb20cf33cb000235
+https://www.codewars.com/kata/585d7d5adb20cf33cb000235✅
 
 4.Meeting
 https://www.codewars.com/kata/59df2f8f08c6cec835000012
