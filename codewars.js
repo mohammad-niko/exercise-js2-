@@ -227,13 +227,193 @@
 
 //   for (let key of A) {
 //     count[key] = (count[key] || 0) + 1;
+//     console.log(count[key]);
 //   }
 //   for (let key in count) {
 //     console.log(count[key]);
-//     if (count[key] % 2 !== 1) {
+//     if (count[key] % 2 !== 0) {
 //       return key;
 //     }
 //   }
 // }
 
 // console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// const findUniq = (arr) => {
+//   let count = {};
+
+//   for (let key of arr) count[key] = (count[key] || 0) + 1;
+
+//   for (let key in count)  if (count[key] === 1) return +key;
+// };
+
+// const findUniq = (arr) => {
+
+//    console.log(arr.sort((a, b) => a - b));
+//   return arr[0] === arr[1] ? arr[arr.length - 1] : arr[0];
+// };
+
+// console.log(findUniq([1, 1, 1, 2, 1, 1]));
+// console.log(findUniq([3, 10, 3, 3, 3]));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// function meeting(s) {
+//   return s
+//     .toUpperCase()
+//     .split(";")
+//     .map((name) => {
+//       const [first, last] = name.split(":");
+//       return { first, last };
+//     })
+//     .sort((a, b) => {
+//       if (a.last === b.last) {
+//         return a.first.localeCompare(b.first);
+//       }
+//       return a.last.localeCompare(b.last);
+//     })
+//     .map(({ first, last }) => `(${last},${first})`)
+//     .join("");
+// }
+
+// console.log(
+//   meeting(
+//     "Alexis:Wahl;John:Bell;Victoria:Schwarz;Abba:Dorny;Grace:Meta;Ann:Arno;Madison:STAN;Alex:Cornwell;Lewis:Kern;Megan:Stan;Alex:Korn;"
+//   )
+// );
+
+// ("(ARNO, ANN)(BELL, JOHN)(CORNWELL, ALEX)(DORNY, ABBA)(KERN, LEWIS)(KORN, ALEX)(META, GRACE)(SCHWARZ, VICTORIA)(STAN, MADISON)(STAN, MEGAN)(WAHL, ALEXIS)");
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// const inArray = (array1, array2) => {
+//   let result = [];
+//   for (let word of array1) {
+//     array2.forEach((x) => {
+//       if (x.includes(word)) {
+//         if (!result.includes(word)) result.push(word);
+//       }
+//     });
+//   }
+//   return result.sort();
+// };
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// const parse = (data) => {
+//   let count = 0;
+//   let result = [];
+//   for (let i = 0; i < data.length; i++) {
+//     switch (data[i]) {
+//       case "i":
+//         ++count;
+//         break;
+
+//       case "d":
+//         --count;
+//         break;
+
+//       case "s":
+//         count = count ** 2;
+//         break;
+
+//       case "o":
+//         result.push(count);
+//         break;
+//     }
+//   }
+//   return result;
+// };
+// console.log(parse("iiisdoso"));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// function repeatStr (n, s) {
+// let result = [];
+// for(let i =0 ; i < n ; i++) result.push(s)
+// return result.join("")
+// }
+// console.log(repeatStr(3, "*"));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// const invert = (array) => {
+//   return array.map((num) => (num > 0 ? -Math.abs(num) : Math.abs(num)));
+// };
+// console.log(invert([1, 2, 3, 4, 5]));
+
+// console.log(invert([1, -2, 3, -4, 5]));
+
+// console.log(-2 > 0);
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// const number = (busStops) => {
+//   let count = 0;
+
+//   busStops.forEach(([on, off]) => {
+//     count += on;
+//     count -= off;
+//   });
+
+//   return count;
+// };
+
+// console.log(
+//   number([
+//     [3, 0],
+//     [9, 1],
+//     [4, 10],
+//     [12, 2],
+//     [6, 1],
+//     [7, 10],
+//   ])
+// );
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+// const sumArray = (array) => {
+//   if ( !array|| array.length < 3) return 0;
+//   let sortArr = array.sort((a, b) => a - b);
+//   sortArr.pop();
+//   sortArr.shift();
+//   return sortArr.reduce((result, num) => result + num, 0);
+// };
+// const sumArray = (array) => {
+//   if (!array || array.length < 3) return 0;
+//   let result = [...array];
+//   const maxVal = Math.max(...result);
+//   const minVal = Math.min(...result);
+
+//   result.splice(result.indexOf(maxVal), 1);
+//   result.splice(result.indexOf(minVal), 1);
+
+//   return result.reduce((result, num) => result + num, 0);
+// };
+// console.log(sumArray([6, 2, 1, 8, 10]));
+// console.log(sumArray([7846654456374, 687687687687]));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// const isPrime = (num) => {
+//   if (num <= 1) return false;
+//   if (num === 2 || num === 3) return true;
+//   if (num % 2 === 0 || num % 3 === 0) return false;
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     console.log(num + "%" + i + "===" + (num % i));
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
+// console.log(isPrime(2));
+// console.log(isPrime(1234567));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// const persistence = (num) => {
+//   let count = 0;
+
+//   while (num >= 10) {
+//     num = num
+//       .toString()
+//       .split("")
+//       .map(Number)
+//       .reduce((res, num1) => res * num1);
+//       ++count
+//   }
+//   return count;
+// };
+// console.log(persistence(999));
+// ------------------------------------------------------------------------------------------------------------------------------------------
