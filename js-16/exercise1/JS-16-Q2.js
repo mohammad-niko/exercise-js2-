@@ -8,5 +8,8 @@ const i = document.querySelector(".cards__card__footer__btn button i");
 
 button.addEventListener("click", () => {
   p.textContent = "Added to Cart";
-  i.remove();
+  // i.remove();
+
+button.disabled = true
+
 });
