@@ -1,5 +1,33 @@
+const div = document.querySelector("#content");
+
 function highlightWords(paragraph, colours) {
-  // Write your code here...
+  const select = document.createElement("select");
+  div.appendChild(select);
+  const p = document.createElement("p");
+  div.appendChild(p);
+  colours.forEach((color) => {
+    const option = document.createElement("option");
+    option.textContent = color;
+    option.value = color;
+    select.appendChild(option);
+  });
+
+  const arrayOfPar = paragraph.split(" ");
+  arrayOfPar.forEach((str) => {
+    const span = document.createElement("span");
+    span.textContent = str + " ";
+    p.appendChild(span);
+  });
+
+  p.addEventListener("click", (e) => {
+    if (e.target.tagName === "SPAN") {
+      select.value === "none"
+        ? (e.target.style.backgroundColor = "transparent")
+        : (e.target.style.backgroundColor = select.value);
+    }
+
+    console.dir(e.target.tagName === "SPAN");
+  });
 }
 
 const paragraph =

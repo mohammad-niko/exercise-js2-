@@ -1,42 +1,53 @@
 let randomNumber = Math.floor(Math.random() * 100 + 1);
+const output = document.querySelector(".final-output");
+const triesOt = document.querySelector(".Tries-output");
+const input = document.querySelector(".inputs-Values");
 console.log(randomNumber);
-console.log(randomNumber);
+
+let guessTrak = 7;
+triesOt.textContent = `Number of Tries :${guessTrak} `;
+
+let gameOver = false;
+
 function guessNumber(e) {
-  //Collect input from the user
+  if (gameOver) return;
   let guess = document.querySelector(".inputs-Values").value;
-  const output = document.querySelector(".final-output");
-  const tries  = document.querySelector("Tries-output");
-  //If the user inputs a bad input ie 0, empty string, number greater that 100, number less than zero Print "Please enter a number between 1 and 100"
-  if (guess <= 0 || guess === "" || guess > 100)
+
+  if (!guess || guess <= 0 || guess > 100) {
     output.textContent = "Please enter a number between 1 and 100";
-  //If the users guess is higher than the random number print Number is too high, try again (hint use .final-out class to print)
-  if(guess > randomNumber)output.textContent = "print Number is too high"
-  //If the users guess is lower than the random number print Number is too low, try again  (hint use .final-out class to print)
-  
-    if(guess < randomNumber)output.textContent = "print Number is too low"
-  
-  //If the user has guessed the random number correctly print out the randomNumber with a message "Guess is correct. You win!"
-  if (guess === randomNumber) output.textContent = "Guess is correct. You win!";
+    return;
+  }
 
-// ------------------------------------------------------------------------------------------------------------------------------
+  guessTrak--;
+  triesOt.textContent = `Number of Tries : ${guessTrak}`;
+  if (guessTrak < 1) {
+    output.style.display = "none";
+    triesOt.textContent = `You Lose, the number was ${randomNumber}`;
+    gameOver = true;
+    return;
+  }
 
+  if (+guess === randomNumber) {
+    triesOt.textContent = `It took you ${Math.abs(guessTrak - 7)} tries`;
+    output.textContent = "Guess is correct. You win!";
+    gameOver = true;
+    return;
+  }
 
-
-console.log(output.value);
-
-
+  output.textContent =
+    guess > randomNumber
+      ? "Number is too high, try again"
+      : "Number is too low, try again";
 }
 
-// For this task we will be making a "New Game" button function which will reset our game,
-// Once the user clicks on this button the user will have new random number to guess
-// 1. Reset the values inside the body of the function
-// 2. Attach our new game button using an event listener to the .btnNewGame button
 function newGame() {
-  //Your code here
-  //Reset randomNumber
-  //Reset users input field
-  //Reset tries, and triesTaken by the user
+  randomNumber = Math.floor(Math.random() * 100) + 1;
+  input.value = "";
+  output.textContent = "Guess a number between 1 and 100";
+  output.style.display = "block";
+  guessTrak = 7;
+  triesOt.textContent = `Number of Tries :${guessTrak} `;
+  gameOver = false;
 }
-
+document.querySelector(".btnNewGame").addEventListener("click", newGame);
 document.querySelector(".btnGuess").addEventListener("click", guessNumber);
-newGame();
