@@ -39,7 +39,7 @@ https://www.codewars.com/kata/576b93db1129fcf2200001e6
  * https://www.codewars.com/kata/5262119038c0985a5b00029f✅
  *
  * Persistent Bugger
- * https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec
+ * https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec✅
  *
  * Build a pile of Cubes
  * https://www.codewars.com/kata/5592e3bd57b64d00f3000047

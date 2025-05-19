@@ -417,3 +417,14 @@
 // };
 // console.log(persistence(999));
 // ------------------------------------------------------------------------------------------------------------------------------------------
+// function findNb(m) {
+//   let count = 1;
+//   let number = 0;
+//   while (m >number) {
+//     number += count ** 3;
+//     console.log(number);
+//     count++;
+//   }
+//   return (number === m) ? count - 1  : -1;
+// }
+// console.log(findNb(1071225555555555));
