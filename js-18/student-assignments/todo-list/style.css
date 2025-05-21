@@ -10,3 +10,12 @@ body {
     margin-top: 150px;
     width: 90%;
   }
+.list-group-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete-all{
+  margin-top: 10px;
+  margin-left: 18px;
+}
