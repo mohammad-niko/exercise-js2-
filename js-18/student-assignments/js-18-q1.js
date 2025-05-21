@@ -4,7 +4,22 @@
 //todo-3:The third parameter should be a string indicating either "add => addition" or "multiply => multiplication".
 //todo-4:The fourth parameter should be a function that log the result of the calculation.
 
-function calculate() {}
+function calculate(num1, num2, operation, func) {
+  switch (operation) {
+    case "add":
+      return func(num1 + num2);
+
+    case "multiply":
+      return func(num1 * num2);
+
+    default:
+      return "invalid value";
+  }
+}
 
 calculate(5, 3, "add", handleCalculationResult);
 calculate(4, 6, "multiply", handleCalculationResult);
+
+function handleCalculationResult(result) {
+  console.log("result: " + result);
+}
