@@ -128,6 +128,7 @@ function deleteAllCompletedTodos() {
     }
   });
   todos = todos.filter((todo) => !todo.completed);
+  console.log(todos);
 }
 deleteAllCompleted.addEventListener("click", deleteAllCompletedTodos);
 
@@ -138,3 +139,4 @@ function getRemainingDays(diedline) {
   const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24));
   return daysLeft > 0 ? `${daysLeft} days left` : "Deadline passed";
 }
+console.log(todos);

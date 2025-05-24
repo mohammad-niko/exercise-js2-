@@ -3,7 +3,18 @@
 // todo-2: It should return the result of filtering based on the callback.
 // todo-3: In the callback function, check if the number is greater than 2.
 
-// const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 
-// const evenNumbers = simulateFilter(numbers, callback);
-// console.log(evenNumbers); //>>> [3, 4, 5]
+const evenNumbers = simulateFilter(numbers, callback);
+function simulateFilter(arr, func) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (func(arr[i])) result.push(arr[i]);
+  }
+  return result;
+}
+function callback(num) {
+  return num > 2;
+}
+
+console.log(evenNumbers); //>>> [3, 4, 5]
