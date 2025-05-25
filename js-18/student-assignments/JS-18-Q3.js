@@ -4,14 +4,14 @@
 
 1. How do we create a new promise?
 
-A: Using the new Promise()
+A: Using the new Promise()✅
 B: Using the window.createPromise() method
 C: Using the Promise.new() method
 =========================================================
 
 2. In promise terminology, what do we call the function that's passed to the Promise() constructor as an argument?
 
-A: Executor 
+A: Executor ✅
 B: Generator
 C: Promise maker
 D: None of the above
@@ -19,7 +19,7 @@ D: None of the above
 
 3. Suppose that you've been told that p is a promise. What will typeof p return?
 
-A: 'object' 
+A: 'object' ✅
 B: 'promise'
 C: 'function' 
 =========================================================
@@ -27,7 +27,7 @@ C: 'function'
 4. According to the ES6 specification, a promise can be in one of the three states... What are they?
 
 A: Pending, withdrawn, terminated
-B: Pending, fulfilled, rejected 
+B: Pending, fulfilled, rejected ✅
 C: Initialized, withdrawn, rejected
 D: Initialized, accomplished, broken
 =========================================================
@@ -47,12 +47,12 @@ p.then(function(data) {
 
 A: OK
 B: OK undefined
-C: OK Good 
+C: OK Good ✅
 =========================================================
 
 6. Which parameter of the executor serves to 'fulfill' its respective promise?
 
-A. First parameter 
+A. First parameter ✅
 B: Second parameter
 =========================================================
 
@@ -67,12 +67,12 @@ let p = new Promise(function(resolve, reject) {
 
 A: null
 B: false
-C: undefined 
+C: undefined ✅
 =========================================================
 
 8. Promises simplify the task of writing complex asynchronous code. True or false?
 
-A: True 
+A: True ✅
 B: False
 =========================================================
 
@@ -92,7 +92,7 @@ console.log('Second');
 A:  First
     Second
 
-B:  Second 
+B:  Second ✅
     First
 
 =========================================================
@@ -113,7 +113,7 @@ let p3 = p2.then(function(data) {
 
 
 A: "OK"
-B: "OK Bye" 
+B: "OK Bye" ✅
 C: undefined 
 =========================================================
 
@@ -129,7 +129,7 @@ let p = new Promise(function (resolve, reject) {
 
 A: State: fulfilled, value: "Sorry" 
 B: State: rejected, value: "Sorry" 
-C: State: fulfilled, value: undefined
+C: State: fulfilled, value: undefined✅
 D: State: rejected, value: undefined
 =========================================================
 
@@ -151,5 +151,5 @@ console.log(p2 === p3);
 
 
 A: True 
-B: False 
+B: False✅ 
 */
