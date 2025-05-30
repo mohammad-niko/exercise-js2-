@@ -5,3 +5,24 @@
 */
 
 // ! Answer
+
+async function placeHolder() {
+  const config = {
+    headers: {
+      Accept: "application/json",
+    },
+  };
+  try {
+    const fet = await fetch(
+      "https://jsonplaceholder.typicode.com/users",
+      config
+    );
+    if (!fet.ok) throw new Error("HTTP error! status: " + response.status);
+
+    const data = await fet.json();
+    console.log(data);
+  } catch (error) {
+    console.log(`fatch error${error}`);
+  }
+}
+placeHolder();
