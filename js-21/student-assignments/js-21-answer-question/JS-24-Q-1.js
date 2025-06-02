@@ -12,3 +12,22 @@
  */
 
 //!Answer:
+
+function createPerson(name, age, profession) {
+  return {
+    name: name,
+    age: age,
+    profession: profession,
+
+    introduce() {
+      return `Hi,my name is ${name} I am ${age} years old and work as a ${profession}`;
+    },
+  };
+}
+
+const person1 = createPerson("John Doe", 30, "Web Developer");
+
+console.log(person1.name);
+console.log(person1.age);
+console.log(person1.profession);
+console.log(person1.introduce());
