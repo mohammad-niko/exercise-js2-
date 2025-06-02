@@ -93,27 +93,32 @@
 // console.log(v);
 // })
 
-async function getWeather() {
-  try {
-    const data = await fetch(
-      "https://api.open-meteo.com/v1/forecast?latitude=35.6892&longitude=51.3890&current_weather=true",{
-        method:"GET", 
-        headers:{
-           Accept: 'application/json'
-        }
-      }
-    );
-    console.log(data);
-    const toJava = await data.json();
-    const { current_weather: wat } = toJava;
-    const { temperature } = wat;
-    console.log(temperature);
-  } catch(err) {
-    console.log(`Error : ${err}`);
-  }
-}
+// async function getWeather() {
+//   try {
+//     const data = await fetch(
+//       "https://api.open-meteo.com/v1/forecast?latitude=35.6892&longitude=51.3890&current_weather=true",{
+//         method:"GET", 
+//         headers:{
+//            Accept: 'application/json'
+//         }
+//       }
+//     );
+//     console.log(data);
+//     const toJava = await data.json();
+//     const { current_weather: wat } = toJava;
+//     const { temperature } = wat;
+//     console.log(temperature);
+//   } catch(err) {
+//     console.log(`Error : ${err}`);
+//   }
+// }
 
-getWeather()
+// getWeather()
 
 
-console.log(Object.prototype);
+// console.log(Object.prototype);
+
+
+
+
+console.log();
