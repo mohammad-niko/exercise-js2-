@@ -8,3 +8,34 @@
 //      c) Lastly, to ensure that the value of the index does not surpass the length of the planets array, implement a mechanism to control the maximum allowed value for the index
 
 ////////Answer///////////
+
+const destination = document.querySelector("#destination");
+destination.style.cursor = "pointer";
+const h3 = document.querySelector("h3");
+let index = 0;
+async function getDataAtUrl() {
+  const config = {
+    headers: {
+      Accept: "application/json",
+    },
+  };
+
+  try {
+    const response = await fetch(
+      "https://handlers.education.launchcode.org/static/planets.json",
+      config
+    );
+    const data = await response.json();
+    //{name , distance}
+    if (index >= data.length) index = 0;
+    h3.textContent = `${data[index].name}  : ${data[index].distance}`;
+
+    ++index;
+  } catch (error) {
+    alert(error);
+  }
+}
+
+destination.addEventListener("click", () => {
+  getDataAtUrl();
+});

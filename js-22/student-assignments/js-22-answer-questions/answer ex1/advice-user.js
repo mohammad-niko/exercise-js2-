@@ -10,6 +10,7 @@ async function getAdvice() {
     },
   };
   loadingIndicator.style.display = "block";
+  h6.textContent="";
   pTag.textContent = "";
   try {
     const get = await fetch("https://api.adviceslip.com/advice", config);
