@@ -31,3 +31,8 @@ console.log(person1.name);
 console.log(person1.age);
 console.log(person1.profession);
 console.log(person1.introduce());
+
+const names = [
+  createPerson("mmad", 20, "front end"),
+  createPerson("John Doe", 30, "Web Developer"),
+];
