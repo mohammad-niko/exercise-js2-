@@ -5,3 +5,14 @@
 //todo4:invoke takePhoto in iphone
 
 ////////////Answers!!!!///////////
+
+function Phone(model, brand) {
+  this.model = model;
+  this.brand = brand;
+}
+Phone.prototype.takePhoto = function () {
+  console.log(`Capturing  photo with ${this.brand},${this.model}`);
+};
+
+const iphone = new Phone("javascript", "ES6");
+iphone.takePhoto()

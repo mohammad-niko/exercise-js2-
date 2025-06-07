@@ -3,3 +3,23 @@
 // Create an instance of the 'Rectangle' class and calculate its area and perimeter.
 
 /////////Answer!!!////////////////
+
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+
+  area() {
+    console.log(this.width * this.height);
+  }
+
+  perimeter() {
+    console.log((this.width + this.height) * 2);
+  }
+}
+
+const rec = new Rectangle(5, 10);
+
+rec.area();
+rec.perimeter();

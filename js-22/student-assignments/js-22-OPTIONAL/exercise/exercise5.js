@@ -5,10 +5,26 @@
 //"You watch all $VideoSeconds$ seconds of $VideoTitle$
 //todo3:Create a instance of Video constructor and call watch() on it.
 
-function Video(title, uploader, seconds) {
+// function Video(title, uploader, seconds) {
+//   this.title = title;
+//   this.uploader = uploader;
+//   this.seconds = seconds;
+// }
+
+//////////////////////َAnswer!!!!////////////
+
+function Video({ title, uploader, seconds }) {
   this.title = title;
   this.uploader = uploader;
   this.seconds = seconds;
 }
+Video.prototype.watch = function () {
+  console.log(`You watch all ${this.seconds} seconds of ${this.title}`);
+};
 
-//////////////////////َAnswer!!!!////////////
+const par = new Video({
+  title: "action",
+  uploader: "tainy",
+  seconds: 500,
+});
+par.watch();
