@@ -296,33 +296,70 @@
 
 
 
-const events = {};  // این یک شیء خالی است که برای نگهداری لیست رویدادها و callbackها استفاده میشه
+// const events = {};  // این یک شیء خالی است که برای نگهداری لیست رویدادها و callbackها استفاده میشه
 
- const EventEmitter = {
-  // on: برای ثبت کردن یک تابع callback برای رویدادی خاص
-  on(eventName, callback) {
-    if (!events[eventName]) events[eventName] = [];  // اگر رویداد وجود نداشت، یک آرایه برای آن بساز
-    events[eventName].push(callback);  // تابع callback رو در آرایه مربوط به event اضافه کن
-  },
+//  const EventEmitter = {
+//   // on: برای ثبت کردن یک تابع callback برای رویدادی خاص
+//   on(eventName, callback) {
+//     if (!events[eventName]) events[eventName] = [];  // اگر رویداد وجود نداشت، یک آرایه برای آن بساز
+//     events[eventName].push(callback);  // تابع callback رو در آرایه مربوط به event اضافه کن
+//   },
 
-  // emit: برای انتشار رویداد و اجرای تمام callbackهایی که برای آن ثبت شده‌اند
-  emit(eventName, data) {
-    if (events[eventName]) {  // اگر رویدادی برای این نام وجود داشته باشد
-      events[eventName].forEach(cb => cb(data));  // برای هر callback، داده را ارسال کن
-    }
-  },
-};
-
-
-function submitForm(data) {
-  console.log("Form submitted:", data);  // نمایش داده‌هایی که فرستاده شده
-  EventEmitter.emit("formSubmitted", data);  // انتشار رویداد "formSubmitted" با داده‌ها
-}
-
-// ثبت callback برای زمانی که رویداد "formSubmitted" منتشر می‌شود
-EventEmitter.on("formSubmitted", (data) => {
-  console.log("✅ Registration Successful for", data.name);  // نمایش پیامی که داده ارسال شده را نشان می‌دهد
-});
+//   // emit: برای انتشار رویداد و اجرای تمام callbackهایی که برای آن ثبت شده‌اند
+//   emit(eventName, data) {
+//     if (events[eventName]) {  // اگر رویدادی برای این نام وجود داشته باشد
+//       events[eventName].forEach(cb => cb(data));  // برای هر callback، داده را ارسال کن
+//     }
+//   },
+// };
 
 
-submitForm({ name: "Ali" });
+// function submitForm(data) {
+//   console.log("Form submitted:", data);  // نمایش داده‌هایی که فرستاده شده
+//   EventEmitter.emit("formSubmitted", data);  // انتشار رویداد "formSubmitted" با داده‌ها
+// }
+
+// // ثبت callback برای زمانی که رویداد "formSubmitted" منتشر می‌شود
+// EventEmitter.on("formSubmitted", (data) => {
+//   console.log("✅ Registration Successful for", data.name);  // نمایش پیامی که داده ارسال شده را نشان می‌دهد
+// });
+
+
+// submitForm({ name: "Ali" });
+
+
+
+// function Bird(name) {
+//   this.name = name;
+// }
+
+
+// console.log(typeof Bird.prototype);
+// let duck = new Bird("Donald");
+
+// console.log(duck.hasOwnProperty("name"));
+// function Animal() {}
+// Animal.prototype = {
+//    constructor: Animal,
+//   describe: function() {
+//     console.log("...");
+//   }
+// };
+// console.log(Animal.prototype.constructor); // ➜ Animal
+// const cat = new Animal();
+// console.log(cat);
+// console.log(cat.constructor === Animal)
+
+// // 2. What is the value for fluffy.age and scratchy.age?
+// function Cat(name, color) {
+// this.name = name;
+// this.color = color;
+// }
+// Cat.prototype.age = 3;
+
+// const fluffy = new Cat("Fluffy", "White");
+// const scratchy = new Cat("Scratchy", "Black");
+// Cat.prototype.age = 4;
+
+// console.log(fluffy.age);
+// console.log(scratchy.age);
