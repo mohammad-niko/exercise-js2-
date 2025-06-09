@@ -12,7 +12,7 @@ const scratchy = new Cat("Scratchy", "Black");
 
 
 A: undefined
-B: 3
+B: 3✅
 C: null
 D: 0
 ===========================================================
@@ -30,7 +30,7 @@ Cat.prototype.age = 4;
 
 
 A: 0
-B: 4
+B: 4✅
 C: 3
 D: null
 E: undefined
@@ -38,7 +38,7 @@ E: undefined
 
 3. What do we mean by "abstraction"?
 
-A: Organizing code into functions, subroutines, and class/method definitions to better contain and isolate
+A: Organizing code into functions, subroutines, and class/method definitions to better contain and isolate✅
 functionality and to mask the complexity of the code with an elegant interface.
 B: Replacing characters with encoded characters.
 C: Breaking code into small parts and spreading them everywhere.
@@ -48,7 +48,7 @@ D: Writing code about complex poetry subjects.
 4. Inheriting features from another Class uses what keyword in JavaScript?
 
 A: inherits
-B: extends
+B: extends✅
 C: overrides
 D: compares
 
@@ -59,7 +59,7 @@ D: compares
 A: init()
 B: build()
 C: create()
-D: constructor()
+D: constructor()✅
 
 ===========================================================
 
@@ -67,7 +67,7 @@ D: constructor()
 
 A: break()
 B: swing()
-C: super()
+C: super()✅
 D: include()
 
 
